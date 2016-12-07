@@ -2,6 +2,8 @@ server_script =<<SCRIPT
 curl -sSL https://get.docker.com/ | sh
 apt-get install -y git-core
 sudo usermod -aG docker vagrant
+sudo apt-get install python-pip
+sudo pip install docker-compose
 SCRIPT
 
 Vagrant.configure(2) do |config|
